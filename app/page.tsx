@@ -30,7 +30,7 @@ export default function Home() {
 
         {/* CONTENT */}
         <div className="container p-4 z-20 m-auto">
-          <div className="flex flex-col gap-4 lg:w-7/12 w-full">
+          <div className="flex flex-col gap-4 lg:w-4/12 w-full">
             <Heading type="h1">
               Modern Dental Care for Healthy, Confident Smiles
             </Heading>
@@ -44,7 +44,7 @@ export default function Home() {
                 Book an Appointment
               </Link>
 
-              <Link className="button border border-white text-white" href="/">
+              <Link className="button backdrop-blur-sm bg-white/15 border border-white text-white" href="/">
                 Call Us
               </Link>
             </div>
@@ -61,13 +61,13 @@ export default function Home() {
         </svg>
       </section>
       <section>
-        <div className="container px-4 py-40 m-auto flex flex-col">
+        <div className="container px-4 py-30 m-auto flex flex-col">
           <Heading align="center">Why Patients Trust Our Dental Care</Heading>
           <TrustCards />
         </div>
       </section>
       <section className="py-32 bg-gray-50">
-        <div className="container w-9/12 mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-16">
+        <div className="container lg:w-9/12 mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-16">
 
           {/* RIGHT IMAGE */}
           <div className="lg:w-1/2 w-full">
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </section>
       <section className="py-32 bg-white">
-        <div className="container w-9/12 mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
+        <div className="container lg:w-9/12 mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
 
           {/* LEFT IMAGE */}
           <div className="lg:w-1/2 w-full">
