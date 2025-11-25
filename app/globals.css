@@ -28,11 +28,23 @@ body {
 }
 
 .button {
-  @apply rounded-full px-5 py-3;
+  @apply px-6 py-3 rounded-full shadow-lg hover:shadow-sm transition-all hover:bg-gray-800;
+}
+
+.theme-text-shadow {
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
 }
 
 h1 {
   @apply text-6xl text-white font-bold;
+}
+
+h2 {
+  @apply text-4xl text-(--color-theme) font-bold;
+}
+
+h1 span {
+  @apply text-(--color-theme);
 }
 
 .white-logo {
