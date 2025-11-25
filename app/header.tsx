@@ -1,6 +1,6 @@
 import { PhoneCall } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
+import Navigation from "./(components)/Navigation"
 
 export default function Header() {
   return (
@@ -16,23 +16,7 @@ export default function Header() {
           height={100}
           alt="Dentist Logo"
         />
-        <nav className="flex flex-row gap-7 items-center">
-          <ul className="flex flex-row gap-7 theme-text-shadow">
-            <li>
-              <Link href="/" className="text-white border-b-2 border-(--color-theme) pb-2 font-bold">Home</Link >
-            </li>
-            <li>
-              <Link href="/about" className="text-white">About</Link >
-            </li>
-            <li>
-              <Link href="/" className="text-white">Gallery</Link >
-            </li>
-            <li>
-              <Link href="/" className="text-white">FAQ</Link >
-            </li>
-          </ul>
-          <Link className="bg-(--color-theme) text-(--color-light) button hover:bg-gray-800 transition-colors" href="/contact">Contact Us</Link>
-        </nav>
+        <Navigation />
       </div>
     </header >
   )
