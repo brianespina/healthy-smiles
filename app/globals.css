@@ -5,6 +5,7 @@
   --foreground: #171717;
   --color-light: #f6f6f9;
   --color-theme: #2467af;
+  --color-secondary: #c9dcf3;
 }
 
 @theme inline {
@@ -35,17 +36,11 @@ body {
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
 }
 
-h1 {
-  @apply text-6xl text-white font-bold;
-}
 
 h2 {
-  @apply text-4xl text-(--color-theme) font-bold;
+  @apply text-3xl font-semibold text-gray-800;
 }
 
-h1 span {
-  @apply text-(--color-theme);
-}
 
 .white-logo {
   filter: brightness(0) invert(1);

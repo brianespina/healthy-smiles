@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Header() {
   return (
     <header className="w-full absolute z-20 bg-linear-to-b from-black/50 to-transparent">
-      <div className="bg-gray-950 text-(--color-light) border-b-3 border-b-(--color-theme)">
+      <div className="bg-gray-950 text-(--color-light) border-b-3 border-b-(--color-secondary)">
         <div className="container p-2 m-auto flex flex-row justify-between">
           <div>
             <Link className="flex flex-row gap-2 items-center" href="/"><PhoneCall size={18} />Call us now</Link>
