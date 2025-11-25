@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <section className="h-full bg-cover relative flex items-center pb-52 pt-64 object-cover object-right" style={{
+      <section className="h-full bg-cover relative flex items-center pb-64 pt-80 object-cover object-right" style={{
         backgroundImage:
           "url(/hero-section-6.jpg)",
       }}>
