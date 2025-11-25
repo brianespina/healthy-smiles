@@ -14,7 +14,7 @@ export default function Home() {
       <section className="relative h-full flex items-center pb-64 pt-80 overflow-hidden">
 
         {/* BACKGROUND IMAGE (Next.js optimized) */}
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
           <Image
             src={heroSectionImg}
             alt="Dental Clinic Hero"
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
 
         {/* GRADIENT OVERLAY */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-black/40 to-transparent z-10"></div>
 
         {/* CONTENT */}
         <div className="container p-4 z-20 m-auto">
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </section>
       <section className="py-32 bg-gray-50">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-16">
+        <div className="container w-9/12 mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-16">
 
           {/* RIGHT IMAGE */}
           <div className="lg:w-1/2 w-full">
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </section>
       <section className="py-32 bg-white">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
+        <div className="container w-9/12 mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
 
           {/* LEFT IMAGE */}
           <div className="lg:w-1/2 w-full">
