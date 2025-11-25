@@ -2,6 +2,7 @@ import { CalendarClock } from "lucide-react";
 import Link from "next/link";
 import Heading from "./(components)/Heading";
 import TrustCards from "./(components)/TrustCards";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -27,12 +28,67 @@ export default function Home() {
         </svg>
       </section>
       <section>
-        <div className="container px-4 py-20 pt-40 m-auto flex flex-col">
+        <div className="container px-4 py-40 m-auto flex flex-col">
           <Heading align="center">Why Patients Trust Our Dental Care</Heading>
           <TrustCards />
         </div>
       </section>
+      <section className="py-32 bg-gray-50">
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-16">
 
+          {/* RIGHT IMAGE */}
+          <div className="lg:w-1/2 w-full">
+            <div className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
+
+              <Image
+                src="/hero-section-2.jpg"
+                alt="Fillings & Restorations"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          {/* LEFT TEXT */}
+          <div className="lg:w-1/2 w-full flex flex-col gap-3">
+            <Heading>
+              Teeth Cleaning & Oral Prophylaxis
+            </Heading>
+            <p className="text-gray-600 mb-6">
+              Keep your teeth and gums healthy with regular deep cleaning. Our oral prophylaxis treatment removes plaque, tartar, and surface stains to prevent gum disease, freshen your breath, and maintain overall oral health. Ideal for patients of all ages and recommended every six months.
+            </p>
+            <Link className="button bg-(--color-theme) text-white" href="/">Book an Appointment</Link>
+          </div>
+        </div>
+      </section>
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
+
+          {/* LEFT IMAGE */}
+          <div className="lg:w-1/2 w-full">
+            <div className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/hero-section-3.jpg"
+                alt="Teeth Cleaning"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          {/* RIGHT TEXT */}
+          <div className="lg:w-1/2 w-full flex flex-col gap-3">
+            <Heading>
+              Fillings & Restorations
+            </Heading>
+            <p className="text-gray-600 mb-6">
+              Restore damaged or decayed teeth with durable, natural-looking fillings. We use high-quality composite materials designed to blend seamlessly with your natural teeth, ensuring both function and aesthetics. This treatment prevents further decay while strengthening your tooth structure.
+            </p>
+            <Link className="button bg-(--color-theme) text-white" href="/">Book an Appointment</Link>
+          </div>
+
+        </div>
+      </section>
     </main>
   );
 }
