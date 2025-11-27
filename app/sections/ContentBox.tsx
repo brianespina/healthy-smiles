@@ -12,8 +12,10 @@ interface ContentBoxProps {
 export default function ContentBox({ children, type = "image-right-50/50", bg = 'none', image = "" }: ContentBoxProps) {
   return (
     <section className={`py-32 ${bg == 'none' ? "" : 'bg-gray-50'}`} >
-      <div className={`container lg:w-9/12 mx-auto px-4 flex flex-col lg:flex-row${type == 'image-right-50/50' ? "-reverse" : ""} items-center gap-16`}>
-
+      <div
+        className={`container lg:w-9/12 mx-auto px-4 flex flex-col items-center gap-16 ${type === "image-right-50/50" ? "lg:flex-row-reverse" : "lg:flex-row"
+          }`}
+      >
         <div className="lg:w-1/2 w-full">
           <div className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
 
