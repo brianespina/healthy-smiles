@@ -3,9 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-light: #f6f6f9;
+  --color-light: #F3FBFF;
   --color-theme: #2467af;
-  --color-secondary: #c9dcf3;
+  --color-secondary: #e8f1f5;
+  --color-accent: #00af9f;
+  --color-accent-light: #d9eeec;
 }
 
 @theme inline {
@@ -30,7 +32,11 @@ body {
 
 
 .button {
-  @apply px-6 py-3 bg-linear-to-r rounded-full shadow-lg hover:shadow-sm transition-all hover:bg-gray-800 w-fit;
+  @apply px-6 py-3 bg-linear-to-r rounded-full shadow-lg hover:shadow-sm transition-all hover:bg-(--color-accent) w-fit h-fit;
+}
+
+.button.no-shadow {
+  @apply shadow-none;
 }
 
 .theme-text-shadow {
@@ -39,7 +45,7 @@ body {
 
 
 h2 {
-  @apply text-3xl font-semibold text-gray-800;
+  @apply text-3xl font-semibold;
 }
 
 

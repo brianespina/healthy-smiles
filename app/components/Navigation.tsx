@@ -26,7 +26,7 @@ export default function Navbar() {
                 href={link.href}
                 className={
                   isActive
-                    ? "text-white border-b-2 border-(--color-theme) pb-2 font-bold"
+                    ? "text-white border-b-2 border-(--color-secondary) pb-2 font-bold"
                     : "text-white opacity-80 hover:opacity-100"
                 }
               >
