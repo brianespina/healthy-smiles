@@ -1,11 +1,4 @@
-import React from "react";
-
-interface HeadingProps {
-  children: React.ReactNode;
-  align?: "start" | "center" | "end";
-  lineColor?: string;
-  type?: "h1" | "h2" | "h3" | "h4";
-}
+import type { HeadingProps } from "../types/component.types.ts";
 
 export default function Heading({
   children,
