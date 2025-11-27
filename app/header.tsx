@@ -1,6 +1,6 @@
 import { PhoneCall } from "lucide-react"
 import Image from "next/image"
-import Navigation from "./(components)/Navigation"
+import Navigation from "./components/Navigation"
 
 //header
 import logo from "@/public/healthy-smiles-v2.png";
