@@ -15,6 +15,7 @@ export default function Navbar({ type, gap = 7 }: { type?: string; gap?: number 
   ];
 
   const buttonClasses = `bg-(--color-theme) text-(--color-light) button hover:bg-gray-800 transition-colors`;
+  const buttonClassesActive = `bg-(--color-accent) text-(--color-light) button hover:bg-gray-800 transition-colors`;
   return (
     <nav className="flex flex-row gap-7">
       <ul className={`flex ${type == 'col' ? 'flex-col' : 'flex-row items-center'} gap-${gap} theme-text-shadow`}>
@@ -28,7 +29,7 @@ export default function Navbar({ type, gap = 7 }: { type?: string; gap?: number 
                 href={link.href}
                 className={
                   isActive
-                    ? `text-white border-b-2 border-(--color-secondary) pb-2 font-bold`
+                    ? `text-white border-b-2 border-(--color-secondary) pb-2 font-bold ${link.type == 'button' && type != 'col' ? buttonClassesActive : ''}`
                     : `text-white opacity-80 hover:opacity-100 ${link.type == 'button' && type != 'col' ? buttonClasses : ''}`
                 }
               >
