@@ -3,9 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-light: #f6f6f9;
+  --color-light: #F3FBFF;
   --color-theme: #2467af;
-  --color-secondary: #c9dcf3;
+  --color-secondary: #e8f1f5;
+  --color-accent: #00af9f;
+  --color-accent-light: #d9eeec;
 }
 
 @theme inline {
@@ -19,30 +21,34 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --color-font: #404040;
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  @apply text-gray-600;
 }
 
 
 .button {
-  @apply px-6 py-3 bg-linear-to-r rounded-full shadow-lg hover:shadow-sm transition-all hover:bg-gray-800 w-fit;
+  @apply px-6 py-3 bg-linear-to-r rounded-full shadow-lg hover:shadow-sm transition-all hover:bg-(--color-accent) w-fit h-fit;
+}
+
+.button.no-shadow {
+  @apply shadow-none;
 }
 
 .theme-text-shadow {
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
 }
 
-
-h2 {
-  @apply text-3xl font-semibold text-gray-800;
-}
-
-
 .white-logo {
   filter: brightness(0) invert(1);
+}
+
+input,
+textarea {
+  @apply px-3.5 py-3 bg-(--color-light) rounded-sm;
 }

@@ -4,4 +4,5 @@ export type HeadingProps = {
   align?: "start" | "center" | "end";
   lineColor?: string;
   type?: headingType;
+  className?: string;
 };
