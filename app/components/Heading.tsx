@@ -20,7 +20,7 @@ export default function Heading({
       return (
         <div className={`flex flex-col items-${align} gap-2 `}>
           <div className={`w-12 h-1 rounded ${lineColor}`}></div>
-          <h2 className={`text-3xl font-semibold text-gray-800 ${className}`}>
+          <h2 className={`text-4xl font-semibold text-gray-800 ${align == 'center' ? 'text-center' : ""} ${className}`}>
             {children}
           </h2>
         </div>

@@ -14,7 +14,7 @@ export default function ContentBox({ children, type = "image-right-50/50", bg = 
   return (
     <section className={`${bg == 'none' ? "" : 'bg-(--color-light)'} ${className}`} >
       <div
-        className={`container lg:w-9/12 mx-auto px-4 flex flex-col items-center gap-16 ${type === "image-right-50/50" ? "lg:flex-row-reverse" : "lg:flex-row"
+        className={`container  mx-auto px-4 flex flex-col items-center gap-10 lg:gap-16 ${type === "image-right-50/50" ? "lg:flex-row-reverse" : "lg:flex-row"
           }`}
       >
         <div className="lg:w-1/2 w-full">

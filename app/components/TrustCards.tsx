@@ -30,21 +30,16 @@ export default function TrustCards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-12">
 
-      {/* Modern Equipment */}
-
       {content.map((card, key) => {
         return (
-          <Card key={key} className="bg-(--color-light)">
-            <div className="flex flex-row justify-between">
+          <Card key={key} className="bg-(--color-light) flex flex-col gap-2">
+            <div className="flex flex-row justify-between ">
               <div className="w-16 h-16 bg-white text-(--color-theme) rounded-md flex items-center justify-center mb-4">
                 <card.icon size={32} strokeWidth={1.5} className="stroke-(--color-accent)" />
               </div>
 
-              <Link className="button bg-(--color-theme) text-sm text-white" href="/">
-                Learn More
-              </Link>
             </div>
-            <Heading type="h3">{card.heading}</Heading>
+            <Heading type="h3" className="text-(--color-theme)">{card.heading}</Heading>
             <p className="text-gray-600">
               {card.body}
             </p>
